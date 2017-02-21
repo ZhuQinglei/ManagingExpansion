@@ -1,0 +1,269 @@
+@import "all_custom.less";
+
+body {
+  min-width: 800px; /* suppose you want minimun width of 1000px */
+  width: auto; /* Firefox will set width as auto */
+  //width: 800px; /* As IE ignores !important it will set width as 1000px; */
+  background: #eee !important;
+  padding: 70px 0 150px;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+p, a {
+  color: @color-primary;
+}
+
+
+.fade {
+  i {
+    color: rgba(0, 0, 0, 0.23);
+  }
+}
+
+.page-title {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+//.panel-body .form-group {
+//  lost-column: 1/2;
+//  width: 50%;
+//}
+//
+//.completed {
+//  color: #fff;
+//  background: #82d8d8;
+//  border-radius: 5px;
+//  padding: 5px;
+//  margin-left: 20px;
+//  animation: complete 0.6s ease;
+//  font-size: 0.6em;
+//}
+//
+//#login-dropdown-list {
+//  right: -1px;
+//  left: auto;
+//}
+//
+//#login-sign-in-link, #login-name-link {
+//  margin-left: 30px;
+//}
+//
+//.resolutionLoad-enter {
+//  opacity: 0;
+//  animation: slideIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+//}
+//
+//.resolutionLoad-leave {
+//  animation: slideOut 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+//  opacity: 1;
+//}
+//
+//.route-enter, .route-appear {
+//  opacity: 0;
+//  animation: slideIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+//}
+//
+//.route-leave {
+//  animation: slideOut 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+//  opacity: 1;
+//}
+//
+//.route-appear {
+//  opacity: 0;
+//  animation: slideUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+//}
+//
+//@-moz-keyframes complete {
+//  0% {
+//    opacity: 0;
+//    transform: translate3d(0, -30px, 0);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//}
+//
+//@-webkit-keyframes complete {
+//  0% {
+//    opacity: 0;
+//    transform: translate3d(0, -30px, 0);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//}
+//
+//@-o-keyframes complete {
+//  0% {
+//    opacity: 0;
+//    transform: translate3d(0, -30px, 0);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//}
+//
+//@keyframes complete {
+//  0% {
+//    opacity: 0;
+//    transform: translate3d(0, -30px, 0);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//}
+//
+//@-moz-keyframes slideIn {
+//  0% {
+//    opacity: 0;
+//    transform: translate3d(-50px, 0, 0);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//}
+//
+//@-webkit-keyframes slideIn {
+//  0% {
+//    opacity: 0;
+//    transform: translate3d(-50px, 0, 0);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//}
+//
+//@-o-keyframes slideIn {
+//  0% {
+//    opacity: 0;
+//    transform: translate3d(-50px, 0, 0);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//}
+//
+//@keyframes slideIn {
+//  0% {
+//    opacity: 0;
+//    transform: translate3d(-50px, 0, 0);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//}
+//
+//@-moz-keyframes slideOut {
+//  0% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//
+//  100% {
+//    opacity: 0;
+//    transform: translate3d(50px, 0, 0);
+//  }
+//}
+//
+//@-webkit-keyframes slideOut {
+//  0% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//
+//  100% {
+//    opacity: 0;
+//    transform: translate3d(50px, 0, 0);
+//  }
+//}
+//
+//@-o-keyframes slideOut {
+//  0% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//
+//  100% {
+//    opacity: 0;
+//    transform: translate3d(50px, 0, 0);
+//  }
+//}
+//
+//@keyframes slideOut {
+//  0% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//
+//  100% {
+//    opacity: 0;
+//    transform: translate3d(50px, 0, 0);
+//  }
+//}
+//
+//@-moz-keyframes slideUp {
+//  0% {
+//    opacity: 0;
+//    transform: translate3d(0, 60px, 0);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//}
+//
+//@-webkit-keyframes slideUp {
+//  0% {
+//    opacity: 0;
+//    transform: translate3d(0, 60px, 0);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//}
+//
+//@-o-keyframes slideUp {
+//  0% {
+//    opacity: 0;
+//    transform: translate3d(0, 60px, 0);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//}
+//
+//@keyframes slideUp {
+//  0% {
+//    opacity: 0;
+//    transform: translate3d(0, 60px, 0);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translate3d(0, 0, 0);
+//  }
+//}

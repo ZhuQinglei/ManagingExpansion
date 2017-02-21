@@ -1,0 +1,222 @@
+@import "all_custom.less";
+
+.btn, button {
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background: @brand-primary;
+  color: white !important;
+  text-decoration: none;
+  //text-transform: uppercase;
+  padding: 5px 40px;
+  //border: solid 3px black;
+  border: none;
+  border-radius: 2px;
+  //font-weight: 400;
+}
+
+.btn.btn-primary, button.btn-primary {
+  border-radius: 5px;
+  margin: 5px;
+  background: @brand-primary !important;
+}
+.btn.btn-success, button.btn-success{
+  background-color: @brand-good;
+}
+
+.btn.btn-deny, button.btn-deny {
+  background: @brand-danger !important;
+  border: transparent;
+  margin: 10px 10px;
+  i {
+    font-size: 1.8em;
+  }
+}
+
+.btn.btn-text, button.btn-text {
+  color: #524763;
+  background: transparent;
+  border: solid 2px #524763;
+  box-shadow: none;
+}
+
+.btn.btn-text-dark, button.btn-text-dark {
+  background: transparent;
+  color: @primary-black;
+}
+
+
+.btn.btn-confirmation, button.btn-confirmation {
+  color: #222;
+  background: #cbe56c;
+  border: solid 2px #cbe56c;
+}
+
+
+.btn.btn-cancel, button.btn-cancel {
+  margin: 5px;
+  border-radius: 5px;
+  background: @brand-danger !important;
+}
+
+
+.btn.btn-info, button.btn-info {
+  height: 40px;
+  margin: 0;
+  background: @brand-info !important;
+}
+
+.btn.btn-generate, button.btn-generate {
+  margin: 5px;
+  border-radius: 5px;
+  background: @brand-info;
+}
+
+.btn.btn-create, button.btn-create {
+  margin: 5px;
+  border-radius: 5px;
+  background: @blue-lighter !important;
+}
+
+// div, not real button -> avoid border
+.btn-trash {
+  margin: 10px;
+  i {
+    font-size: 2em;
+    color: @brand-danger;
+    &:hover {
+      color: gray;
+    }
+  }
+}
+
+.btn.btn-full, button.btn-full{
+  width:100%;
+  margin: 0;
+  background-color: @color-primary !important;
+  padding: 10px 5px;
+}
+
+.btn.btn-bar, button.btn-bar{
+  padding: 10px 20px;
+  //width: 100%;
+  background-color: @blue !important;
+}
+
+.btn.white-button, button.white-button {
+  width: 20%;
+  height: 50px;
+  background: white;
+  border-radius: 0;
+  margin: 0;
+  padding: 5px 10px;
+  color: black !important;
+  text-decoration: none;
+  font-size: 1.1em;
+  &:hover, &:active {
+    color: white;
+    border-color: transparent;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+.white-button-small {
+  background: white;
+  border-radius: 7px;
+  margin-left: 3%;
+  //margin-right: 3%;
+  color: black;
+  text-decoration: none;
+  text-transform: lowercase;
+  padding: 5px 20px;
+  border: 0;
+
+  &:hover {
+    background: oldlace;
+    color: gray;
+    border-color: transparent;
+  }
+}
+
+.btn-link {
+  width: 70%;
+  height: 35px;
+  margin: auto;
+  background: transparent;
+
+  color: @primary-blue !important;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: lowercase;
+  padding: 10px 10px;
+
+  &:hover {
+    color: gray;
+    //border-color: transparent;
+  }
+}
+
+.discard-button {
+  display: block;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
